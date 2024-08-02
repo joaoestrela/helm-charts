@@ -1,4 +1,4 @@
-
+# Default values
 # -- Project promotion policies. More info [here](https://kargo.akuity.io/concepts#promotion-policies)
 promotionPolicies: []
 # promotionPolicies:
@@ -24,7 +24,6 @@ warehouses: []
 #         semverConstraint: ^1.2.3
 #       - repoURL: ghcr.io/repo/chart
 #         semverConstraint: ^4.5.6
-
 
 # -- Project stages. More info [here](https://kargo.akuity.io/concepts#stage-resources)
 stages: []
