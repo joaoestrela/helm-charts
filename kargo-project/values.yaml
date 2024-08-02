@@ -1,0 +1,45 @@
+
+# -- Project promotion policies. More info [here](https://kargo.akuity.io/concepts#promotion-policies)
+promotionPolicies: []
+# promotionPolicies:
+#   - autoPromotionEnabled: true
+#     stage: dev
+#   - autoPromotionEnabled: false
+#     stage: staging
+#   - autoPromotionEnabled: false
+#     stage: production
+
+# -- Project warehouses. More info [here](https://kargo.akuity.io/concepts#warehouse-resources)
+warehouses: []
+# warehouses:
+#   - name: warehouse1
+#     subscriptions:
+#       - repoURL: ghcr.io/repo/image
+#         semverConstraint: ^1.2.3
+#       - repoURL: ghcr.io/repo/chart
+#         semverConstraint: ^4.5.6
+#   - name: warehouse1
+#     subscriptions:
+#       - repoURL: ghcr.io/repo/image
+#         semverConstraint: ^1.2.3
+#       - repoURL: ghcr.io/repo/chart
+#         semverConstraint: ^4.5.6
+
+
+# -- Project stages. More info [here](https://kargo.akuity.io/concepts#stage-resources)
+stages: []
+# stages:
+#   - name: stage1
+#     requestedFreight:
+#     - origin:
+#         kind: Warehouse
+#         name: warehouse1
+#       sources:
+#         direct: true
+#   - name: stage2
+#     requestedFreight:
+#     - origin:
+#         kind: Warehouse
+#         name: warehouse1
+#       sources:
+#         direct: true

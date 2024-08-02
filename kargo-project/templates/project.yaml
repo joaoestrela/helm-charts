@@ -1,0 +1,9 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Project
+metadata:
+  name: {{ include "kargo-project.fullname" . }}
+spec:
+  {{- with .Values.promotionPolicies }}
+  promotionPolicies:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
