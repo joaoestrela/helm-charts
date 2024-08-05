@@ -4,7 +4,7 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
 metadata:
-  name: {{ $.Release.Name }}-{{ $stage.name }}
+  name: {{ $stage.name }}
   namespace: {{ $.Release.Name }}
 spec:
   {{- with .requestedFreight }}

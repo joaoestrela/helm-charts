@@ -2,7 +2,7 @@ apiVersion: v2
 name: kargo-project
 description: Helper Helm Chart to bootstrap Kargo projects
 type: application
-version: 0.0.4
+version: 0.0.5
 maintainers:
   - name: joaoestrela
     email: jestrela.galaxy@gmail.com

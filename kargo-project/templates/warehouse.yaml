@@ -4,7 +4,7 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
-  name: {{ $.Release.Name }}-{{ $warehouse.name }}
+  name: {{ $warehouse.name }}
   namespace: {{ $.Release.Name }}
 spec:
   {{- with .subscriptions }}
