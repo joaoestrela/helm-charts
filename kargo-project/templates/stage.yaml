@@ -1,5 +1,6 @@
 {{- range $index, $stage := .Values.stages }}
 {{- with $stage }}
+---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
 metadata:

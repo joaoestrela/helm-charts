@@ -42,3 +42,29 @@ stages: []
 #         name: warehouse1
 #       sources:
 #         direct: true
+
+# -- Project secrets. More info [here](https://kargo.akuity.io/how-to-guides/managing-credentials#credentials-as-kubernetes-secret-resources)
+secrets: []
+# secrets:
+#   - name: my-github-pat
+#     type: git
+#     data:
+#       githubAppID: <app id>
+#       githubAppPrivateKey: <base64-encoded private key>
+#       githubAppInstallationID: <installation id>
+#       repoURL: <repo url>
+#       repoURLIsRegex: <true if repoURL is a pattern matching multiple repositories>
+#   - name: my-helm-registry
+#     type: helm
+#     data:
+#       repoURL: <repo url>
+#       username: <username>
+#       password: <password>
+#       repoURLIsRegex: <true if repoURL is a pattern matching multiple repositories>
+#   - name: my-oci-registry
+#     type: image
+#     data:
+#       repoURL: <repo url>
+#       username: <username>
+#       password: <password>
+#       repoURLIsRegex: <true if repoURL is a pattern matching multiple repositories>
