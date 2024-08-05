@@ -1,7 +1,7 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Project
 metadata:
-  name: {{ .Release.Name }}
+  name: {{ $.Release.Name }}
 spec:
   {{- with .Values.promotionPolicies }}
   promotionPolicies:
