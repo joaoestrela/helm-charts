@@ -11,5 +11,9 @@ spec:
   requestedFreight:
     {{- toYaml . | nindent 4 }}
   {{- end }}
+  {{- with .promotionMechanisms }}
+  promotionMechanisms:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 {{- end }}
 {{- end }}
