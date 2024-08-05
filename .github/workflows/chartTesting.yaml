@@ -23,14 +23,17 @@ jobs:
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.6.1
+        with:
+          version: 3.11.0
+          yamllint_version: 1.33.0
+          yamale_version: 4.0.4
 
       - name: Run chart-testing (list-changed)
         id: list-changed
         run: |
-          changed=$(ct list-changed --config ct.yaml)
-          if [[ -n "$changed" ]]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
+          changed=$(ct list-changed --chart-dirs .)
+          echo "changed=$changed" >> $GITHUB_OUTPUT
 
       - name: Run chart-testing (lint)
-        run: ct lint --chart-dirs . --charts .
+        if: steps.list-changed.outputs.changed != ''
+        run: ct lint --chart-dirs . --charts "${{ steps.list-changed.outputs.changed }}"
