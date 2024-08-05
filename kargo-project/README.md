@@ -1,14 +1,21 @@
 # kargo-project
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 Helper Helm Chart to bootstrap Kargo projects
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| joaoestrela | <jestrela.galaxy@gmail.com> |  |
 
 ## Values
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | promotionPolicies | list | `[]` | Project promotion policies. More info [here](https://kargo.akuity.io/concepts#promotion-policies) |
+| secrets | list | `[]` | Project secrets. More info [here](https://kargo.akuity.io/how-to-guides/managing-credentials#credentials-as-kubernetes-secret-resources) |
 | stages | list | `[]` | Project stages. More info [here](https://kargo.akuity.io/concepts#stage-resources) |
 | warehouses | list | `[]` | Project warehouses. More info [here](https://kargo.akuity.io/concepts#warehouse-resources) |
 
